@@ -1,0 +1,27 @@
+@mixin flex($direct: row, $justify: center, $align: center, $gap: 0) {
+    display: flex;
+    flex-direction: $direct;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+}
+
+@mixin breakpoint($size) {
+    @if $size==mobile {
+        @media(max-width:30em) {
+            @content;
+        }
+    }
+
+    @else if $size==tablet {
+        @media(max-width:50em) {
+            @content;
+        }
+    }
+}
+
+%h2 {
+    font-size: 1.7rem;
+    font-weight: 900;
+    line-height: 1.2;
+}

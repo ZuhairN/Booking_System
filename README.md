@@ -1,34 +1,32 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Code Challenge
 
-## Getting Started
+## The Task
 
-First, run the development server:
+A clinic is working **on implementing** a web page where patients can easily access and book appointments online, the booking scheduling system is part of the clinic’s running website. They’ve been working with a designer on the user interface.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+You are the responsible developer, and you will be working with a back-end developer to render a **dynamic page**. The back-end developer will provide a Web API Method, which returns back the doctor’s information and availability.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+You should be aware, users can only schedule an appointment at least **one day ahead** and can schedule **within 30 days**.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Timing
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+You've got **48 hours** to complete this code challenge from the moment you received this e-mail. Push your code to an **open repository on GitHub** and send us the link in time. Any commits pushed after the deadline has been exceeded will be ignored.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Technical Requirements
 
-## Learn More
+- You are free to choose the framework, library or technology comes to your mind. Be prepared to explain and justify your choice.
+- Make sure the page follow the same design screenshot provided with this challenge.
+- The page should be functional on all modern browsers. (Internet Explorer and Opera Mobile are excluded)
+- The page should be responsive and usable on touch-based devices.
 
-To learn more about Next.js, take a look at the following resources:
+## Resources
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [API Method](https://cura-front-end-test.herokuapp.com/)
+- [User Interface Design](https://www.figma.com/file/PUnQNoIcepYJtwhb1bx5CC/Code-Challnege?node-id=0%3A1)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Hints & Inspiration
 
-## Deploy on Vercel
+- Make sure that your code can be easily executed once we've pulled your repository. Consider adding a readme file with instructions.
+- Think about interesting ways to implement transitions and animations.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## And most importantly have fun!

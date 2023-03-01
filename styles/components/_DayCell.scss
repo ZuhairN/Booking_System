@@ -1,0 +1,37 @@
+@use '../utils' as *;
+
+.DayCell {
+    @include flex($direct: column, $gap: 2px);
+    min-width: 4.6rem;
+    min-height: 5.9rem;
+    font-weight: 800;
+    font-size: 1.4rem;
+    border: 2px dashed transparent;
+    border-radius: 1rem;
+    cursor: pointer;
+    box-shadow: 0px 1px 4px rgba($clr-black, 0.161);
+    transition: all 200ms ease-in-out;
+
+    input:checked+& {
+        color: $clr-white;
+        background-color: $clr-blue;
+        box-shadow: none;
+    }
+
+    input:not(:disabled):not(:checked)+&:hover {
+        color: $clr-blue;
+        border-color: $clr-blue;
+        box-shadow: none;
+    }
+
+    input:disabled+& {
+        opacity: .19;
+        box-shadow: none;
+        cursor: not-allowed;
+    }
+
+    &>span {
+        font-weight: 400;
+        font-size: 1.8rem;
+    }
+}

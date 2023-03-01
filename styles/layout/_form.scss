@@ -1,0 +1,68 @@
+@use '../utils' as *;
+
+.Form {
+    @include flex($direct: column, $align: stretch, $gap: 1.9rem);
+
+    &__header {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 2px;
+    }
+
+    &__container {
+        @include flex($direct: column, $align: stretch, $gap: 1.6rem);
+        padding: 2.6rem 3.8rem 2.7rem 4.1rem;
+        border: 1px solid $clr-lightGray;
+        border-radius: 1rem;
+    }
+
+    &__fee {
+        @extend %h2;
+        @include flex();
+        padding-bottom: 1.85rem;
+        border-bottom: 1px solid $clr-lightGray;
+
+        & span {
+            margin-left: auto;
+            font-weight: 400;
+            opacity: .5;
+        }
+    }
+
+    &__legend {
+        @extend %h2;
+        margin-bottom: 1.2rem;
+    }
+
+    &__dateTable {
+        // @include flex($gap: 1.1rem);
+        max-width: 30rem;
+        position: relative;
+        padding-inline: 2px;
+    }
+
+    &__timeTable {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        gap: 1.4rem .8rem;
+    }
+
+    &__submit {
+        border: 2px dashed transparent;
+        background-color: $clr-blue;
+        color: $clr-white;
+        font-size: 1.6rem;
+        font-weight: 700;
+        min-height: 5.2rem;
+        border-radius: 1.4rem;
+        cursor: pointer;
+        transition: all 200ms ease-in-out;
+
+        &:hover {
+            color: $clr-blue;
+            background-color: $clr-white;
+            border-color: $clr-blue;
+            transform: translatey(-2%);
+        }
+    }
+}
