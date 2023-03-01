@@ -7,6 +7,11 @@
         font-size: 2.5rem;
         font-weight: 700;
         margin-bottom: 2px;
+
+        @include breakpoint(tablet) {
+            align-self: center;
+            font-size: clamp(2rem, 1rem + 2.5vw, 2.5rem);
+        }
     }
 
     &__container {
@@ -35,16 +40,27 @@
     }
 
     &__dateTable {
-        // @include flex($gap: 1.1rem);
         max-width: 30rem;
         position: relative;
         padding-inline: 2px;
+
+        @include breakpoint(mobile) {
+            max-width: 60vw;
+        }
     }
 
     &__timeTable {
         display: grid;
-        grid-template-columns: repeat(3, auto);
+        grid-template-columns: repeat(3, 1fr);
         gap: 1.4rem .8rem;
+
+        @include breakpoint(tablet) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include breakpoint(mobile) {
+            grid-template-columns: 1fr;
+        }
     }
 
     &__submit {
@@ -58,11 +74,23 @@
         cursor: pointer;
         transition: all 200ms ease-in-out;
 
-        &:hover {
+        &:not(.disabled):not(.submitted):hover {
             color: $clr-blue;
             background-color: $clr-white;
             border-color: $clr-blue;
             transform: translatey(-2%);
+        }
+
+        &.disabled {
+            color: $clr-black;
+            background-color: $clr-white;
+            box-shadow: inset 0px 0px 5px $clr-disabled;
+            opacity: .19;
+            cursor: not-allowed;
+        }
+
+        &.submitted {
+            background-color: $clr-submitted;
         }
     }
 }

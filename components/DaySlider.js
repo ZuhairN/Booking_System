@@ -9,7 +9,7 @@ function SampleNextArrow(props) {
     return (
         <div
             className={className}
-            style={{ ...style, display: "block", background: "transparent", ':before': { display: 'none' } }}
+            style={{ ...style, width: '0px', right: '-24px' }}
             onClick={onClick}
         >
             <MdArrowForwardIos className='Slider__arrow' />
@@ -22,7 +22,7 @@ function SamplePrevArrow(props) {
     return (
         <div
             className={className}
-            style={{ ...style, display: "block", background: "transparent" }}
+            style={{ ...style, width: '0px', left: '0px' }}
             onClick={onClick}
         >
             <MdArrowBackIosNew className='Slider__arrow' />

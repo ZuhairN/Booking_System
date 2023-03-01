@@ -4,24 +4,11 @@
     display: flex !important;
     gap: 1.1rem;
     padding-block: 2px;
-    padding-left: .7rem;
+    padding-left: 3px;
 
     &::before {
         display: none !important;
     }
-}
-
-.slick-arrow.slick-prev {
-    left: 0;
-}
-
-.slick-arrow.slick-next {
-    right: -5.25rem;
-}
-
-.dlivk-arrow {
-    width: 0;
-    height: 0;
 }
 
 .slick-arrow::before {

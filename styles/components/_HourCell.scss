@@ -7,10 +7,13 @@
     box-shadow: 0px 1px 4px rgba($clr-black, 0.161);
     border: 2px dashed transparent;
     border-radius: 1rem;
-    min-width: 8rem;
     min-height: 3.6rem;
     cursor: pointer;
     transition: all 200ms ease-in-out;
+
+    @include breakpoint(tablet) {
+        min-height: 4rem;
+    }
 
     input:checked+& {
         color: $clr-white;
